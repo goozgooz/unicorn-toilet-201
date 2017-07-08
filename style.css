@@ -1,6 +1,37 @@
 body {
   width: 960px;
+  height: 1000px;
   margin: auto;
+  border: 2px solid black;
+}
+
+.navbar {
+  position: fixed;
+  font-family: 'Delius Unicase', cursive;
+  font-size: .8em;
+}
+
+#nav-logo {
+ width: 60px;
+ margin-left: 75px;
+ float: left;
+}
+
+#logo {
+  height: 60px;
+  width: 60px;
+}
+
+#nav-links {
+  float: left;
+  margin-top: 15px;
+  position: relative;
+  left: 475px;
+}
+
+#nav-links a {
+  padding: 10px;
+  text-decoration: none;
 }
 
 #map {
