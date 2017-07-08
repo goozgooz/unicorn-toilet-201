@@ -38,6 +38,47 @@ div.navBar2{
 =======
 body {
   width: 960px;
+  height: 1000px;
   margin: auto;
+<<<<<<< HEAD
 >>>>>>> 12199375cca4b76bf3a03ece2b3e3c56730005ac
+=======
+  border: 2px solid black;
+}
+
+.navbar {
+  position: fixed;
+  font-family: 'Delius Unicase', cursive;
+  font-size: .8em;
+}
+
+#nav-logo {
+ width: 60px;
+ margin-left: 75px;
+ float: left;
+}
+
+#logo {
+  height: 60px;
+  width: 60px;
+}
+
+#nav-links {
+  float: left;
+  margin-top: 15px;
+  position: relative;
+  left: 475px;
+}
+
+#nav-links a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+#map {
+  margin: auto;
+  margin-top: 100px;
+  width: 940px;
+  height: 600px;
+>>>>>>> ced303f58497a2894545a1d05fc8e86bbfab9553
 }
