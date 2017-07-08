@@ -1,48 +1,7 @@
-<<<<<<< HEAD
-div.navBar{
-  background-color:blue;
-  text-align: center;
-  font-family:fantasy;
-  color: black;
-  position: fixed;
-  margin:auto;
-  width: 50%;
-float:left;
-
-}
-a{
-  font-size: 25px;
-  color: black;
-  margin: 20px;
-}
-a.home{
-  display:
-}
-img.logoU{
-  height:100px;
-  width: 100px;
-  margin: auto;
-  clear:right;
-  float:none;
-}
-div.navBar2{
-  background-color:blue;
-  text-align: center;
-  font-family:fantasy;
-  color: black;
-  position: fixed;
-  margin:auto;
-  width: 50%;
-  float:right;
-
-=======
-body {
+body{
   width: 960px;
   height: 1000px;
   margin: auto;
-<<<<<<< HEAD
->>>>>>> 12199375cca4b76bf3a03ece2b3e3c56730005ac
-=======
   border: 2px solid black;
 }
 
@@ -80,5 +39,11 @@ body {
   margin-top: 100px;
   width: 940px;
   height: 600px;
->>>>>>> ced303f58497a2894545a1d05fc8e86bbfab9553
+}
+div.aboutBox{
+
+}
+img.photoTeam{
+  height: 200px;
+  width: 200px;
 }
