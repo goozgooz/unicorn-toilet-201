@@ -1,11 +1,37 @@
 div.navBar{
-  background-color:white;
+  background-color:blue;
   text-align: center;
   font-family:fantasy;
   color: black;
+  position: fixed;
+  margin:auto;
+  width: 50%;
+float:left;
 
 }
 a{
-  font-size: 150%;
+  font-size: 25px;
   color: black;
+  margin: 20px;
+}
+a.home{
+  display:
+}
+img.logoU{
+  height:100px;
+  width: 100px;
+  margin: auto;
+  clear:right;
+  float:none;
+}
+div.navBar2{
+  background-color:blue;
+  text-align: center;
+  font-family:fantasy;
+  color: black;
+  position: fixed;
+  margin:auto;
+  width: 50%;
+  float:right;
+
 }
