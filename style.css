@@ -5,6 +5,8 @@ body {
   border: 2px solid black;
 }
 
+/*Header Stuff*/
+
 .navbar {
   position: fixed;
   font-family: 'Delius Unicase', cursive;
@@ -32,7 +34,29 @@ body {
 #nav-links a {
   padding: 10px;
   text-decoration: none;
+  color: purple;
 }
+
+/*Footer Stuff*/
+.footer {
+  text-align: center;
+  color: grey;
+  margin-top: 200px;
+}
+
+.footer hr {
+  width: 720px;
+  margin-bottom: 25px;
+}
+
+.footer h3 {
+  font-family: 'Delius Unicase', cursive;
+  font-size: 9px;
+  letter-spacing: .5px;
+  margin-bottom: 5px;
+}
+
+
 
 #map {
   margin: auto;
