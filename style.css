@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div.navBar{
   background-color:blue;
   text-align: center;
@@ -34,4 +35,9 @@ div.navBar2{
   width: 50%;
   float:right;
 
+=======
+body {
+  width: 960px;
+  margin: auto;
+>>>>>>> 12199375cca4b76bf3a03ece2b3e3c56730005ac
 }
