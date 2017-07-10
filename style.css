@@ -28,6 +28,14 @@
   width: 60px;
 }
 
+#logo:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+}
+
+.nav-buttons:hover {
+  -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+}
+
 .nav-links {
   float: left;
   margin-top: 15px;
@@ -43,10 +51,10 @@
   font-weight: bold;
 }
 
+
 #active-link {
   color: #A874D4;
 }
-
 
 /*Footer Stuff*/
 .footer {
@@ -85,51 +93,46 @@
   margin-top: 100px;
   width: 960px;
   height: 300px;
+  display: inline-block;
   background-color: #A4FFD5;
 }
 
 .our-pictures{
   overflow: hidden;
   width: 220px;
-  height: 260px;
+  height: 300px;
 }
 
-.card-container {
+.L-card-container {
   height: 100%;
   perspective: 600;
   position: relative;
-  width: 300px;
+  width: 220px;
   display: inline;
   float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.R-card-container {
+  height: 100%;
+  perspective: 600;
+  position: relative;
+  width: 220px;
+  display: inline;
+  float: right;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .card {
   height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 100%;
-}
-
-.card-D {
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
   width: 100%;
   float: left;
-}
-
-.card-A {
-  height: 100%;
   position: absolute;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-  width: 100%;
-  float: right;
 }
+
 .card:hover {
   transform: rotateY(180deg);
 }
@@ -143,6 +146,10 @@
   transform: rotateY(180deg);
 }
 
+.what-about-us {
+  height: 100%;
+  width: 700px;
+}
 
 /* Colors
 Purple: #A874D4
