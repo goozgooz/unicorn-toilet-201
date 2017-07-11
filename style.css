@@ -2,16 +2,17 @@ body{
   width: 960px;
   height: 1000px;
   margin: auto;
-  background-color: HEX CBB7FF;
 }
-#grad {
-  background: linear-gradient(HEX CBB7FF, HEX BFFFFF, HEX CEFFD5, HEX FF988E, ED95C0);
-}
+/*Header Stuff*/
+
 .navbar {
   position: fixed;
+  width: 960px;
   font-family: 'Delius Unicase', cursive;
   font-size: .8em;
   top: 0px;
+  z-index: 10;
+  background-color: white;
 }
 
 #nav-logo {
@@ -26,14 +27,15 @@ body{
 }
 
 
-#nav-links {
+.nav-links {
   float: left;
   margin-top: 15px;
   position: relative;
   left: 475px;
+  top: 10px;
 }
 
-#nav-links a {
+.nav-links a {
   padding: 10px;
   text-decoration: none;
 
@@ -66,6 +68,39 @@ body{
   font-family: times;
   border: 2px solid black;
 }
+  color: #FF988E;
+  font-weight: bold;
+}
+
+#active-link {
+  color: #A874D4;
+}
+
+
+/*Footer Stuff*/
+.footer {
+  font-family: 'Delius Unicase', cursive;
+  text-align: center;
+  letter-spacing: .5px;
+  color: grey;
+  margin-top: 200px;
+}
+
+#unicorn {
+  color: #A874D4;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer hr {
+  width: 720px;
+  margin-bottom: 15px;
+}
+
+.footer h3 {
+  font-size: 9px;
+}
+
 
 
 #map {
@@ -74,17 +109,18 @@ body{
   width: 940px;
   height: 600px;
 }
-div.aboutBox{
 
-}
 img.photoTeam{
   height: 200px;
   width: 200px;
 }
 
-/*Purple : HEX CBB7FF
-Blue: HEX BFFFFF
-Teal: HEX CEFFD5
-Orange: HEX FF988E
-Pink: ED95C0*/
-e
+
+
+/* Colors
+Purple: #A874D4
+Teal: #86FFFF
+Orange: #FF788E
+Pink: #ED7DC0
+Mint: A4FFD5;
+*?
