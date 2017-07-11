@@ -156,23 +156,29 @@ body {
   font-family: fantasy;
   text-align: center;
 }
+
 #large {
   font-size: 90px;
-  margin-top: 15%;
+  margin-top: 200px;
 }
+
 #medium {
   font-size: 60px;
-  margin-top: inherit;
+  margin-top: 50px;
 }
+
+#small {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
 #button {
   text-align: center;
   margin-top: 30px;
 }
-#footer {
-  margin-top: 700px;
-  font-family: times;
-  border: 2px solid black;
-}
+
+
 .button {
   border-top: 1px solid #96d1f8;
   background: #65a9d7;
