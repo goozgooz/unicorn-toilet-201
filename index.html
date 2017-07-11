@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Find Your Unicorn</title>
+    <title>Unicorn Toilet</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIfXiNVWlnFanLTo8DwjkHgidE_6mbcGY&callback=initMap" async defer></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Delius+Unicase:400,700" rel="stylesheet">  </head>
   <body>
+    <div class="navbar">
+      <div id="nav-logo">
+        <img src="https://www.ethereum.org/images/unicorn.png" alt="" id="logo">
+      </div>
+      <div class="nav-links">
+        <a href="index.html" id="active-link" class="nav-buttons">Home</a>
+        <a href="toilets.html" class="nav-buttons">Toilets</a>
+        <a href="about-us.html" class="nav-buttons">About us</a>
+        <a href="help.html" class="nav-buttons">Help</a>
+      </div>
+    </div>
 
-  <div class="navbar">
-    <div id="nav-logo">
-      <img src="https://www.ethereum.org/images/unicorn.png" alt="" id="logo">
-    </div>
-    <div class="nav-links">
-      <a href="index.html" id="active-link">Home</a>
-      <a href="toilets.html">Toilets</a>
-      <a href="about-us.html">About us</a>
-      <a href="help.html">Help</a>
-    </div>
+
+  <div class="title" id="large">
+    <h1>Need a perfect toilet?</h1>
+  </div>
+  <div class="title" id="medium">
+    <h2>Problem solved.</h2>
+  </div>
+  <div class="title" id="small">
+    <h3> Click below to find the unicorn you have been searching for!</h3>
+  </div>
+  <div class="title">
+  <button href="about-us.html" class="button" id="button1">Ready Go!</button>
   </div>
 
   <div class="footer">
     <hr>
     <h2 id="unicorn">Unicorn Toilet</h2>
     <h3>D.A.R.N. Problem Solvers Production...you're welcome.</h3>
+    <h3>&copy 2017</h3>
   </div>
-
   </body>
 </html>

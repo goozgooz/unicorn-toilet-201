@@ -1,6 +1,6 @@
 body {
   width: 960px;
-  height: 1000px;
+  height: auto;
   margin: auto;
   /*border: 2px solid black;*/
 }
@@ -28,6 +28,14 @@ body {
   width: 60px;
 }
 
+#logo:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+}
+
+.nav-buttons:hover {
+  -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+}
+
 .nav-links {
   float: left;
   margin-top: 15px;
@@ -43,10 +51,10 @@ body {
   font-weight: bold;
 }
 
+
 #active-link {
   color: #A874D4;
 }
-
 
 /*Footer Stuff*/
 .footer {
@@ -81,7 +89,121 @@ body {
   height: 600px;
 }
 
+.about-us{
+  margin-top: 100px;
+  width: 960px;
+  height: 300px;
+  display: inline-block;
+  background-color: #A4FFD5;
+}
 
+.our-pictures{
+  overflow: hidden;
+  width: 220px;
+  height: 300px;
+}
+
+.L-card-container {
+  height: 100%;
+  perspective: 600;
+  position: relative;
+  width: 220px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.R-card-container {
+  height: 100%;
+  perspective: 600;
+  position: relative;
+  width: 220px;
+  display: inline;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  float: left;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.what-about-us {
+  height: 100%;
+  width: 700px;
+}
+
+
+.title {
+  font-family: fantasy;
+  text-align: center;
+}
+#large {
+  font-size: 90px;
+  margin-top: 15%;
+}
+#medium {
+  font-size: 60px;
+  margin-top: inherit;
+}
+#button {
+  text-align: center;
+  margin-top: 30px;
+}
+#footer {
+  margin-top: 700px;
+  font-family: times;
+  border: 2px solid black;
+}
+.button {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9c3e8c), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #9c3e8c, #65a9d7);
+    background: -moz-linear-gradient(top, #9c3e8c, #65a9d7);
+    background: -ms-linear-gradient(top, #9c3e8c, #65a9d7);
+    background: -o-linear-gradient(top, #9c3e8c, #65a9d7);
+    padding: 15px 29px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 37px;
+    font-family: fantasy, serif;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+ .button:hover {
+    border-top-color: #CBB7FF;
+    background: #28597a;
+    color: #ccc;
+  }
+ .button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
 
 /* Colors
 Purple: #A874D4
