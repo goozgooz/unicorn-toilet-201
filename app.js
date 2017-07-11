@@ -49,14 +49,11 @@
 //     addMarker(toilets[i]);
 //   }
 // };
-function Toilet(rating,soap,dry,style,parking,toiletPaper){
-  this.rating = rating;
-  this.soap = soap;
+function Toilet(overall, toiletPaper, soap, dry, style, parking, ){
+  this.overall = overall; //Integer 1-5
+  this.toiletPaper = toiletPaper; //Integer 1-5
+  this.soap = soap; //String 'foam' or 'gel'
   this.dry = dry;
   this.style = style;
   this.parking = parking;
-  this.toiletPaper = toiletPaper;
 }
-
-var subway = new Toilet(5, "flom", "paper","manual","street",3);
-console.log(subway);
