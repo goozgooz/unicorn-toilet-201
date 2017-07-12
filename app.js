@@ -14,7 +14,8 @@ function Toilet(coords, name, rating, tpQuality, drying, soap, parking, icon){
 };
 
 var sportsBar = new Toilet({lat: 47.6199856, lng: -122.3482257}, 'Sport Restaurant & Bar', 3, 2, 'Both', 'Gel', 'Pay');
-var armory = new Toilet()
+var armory = new Toilet({lat: 47.6215512, lng: -122.3531273}, 'Armory @ Seattle Center', 4, 2, 'Paper Towel', 'Gel', 'Pay');
+var porterPotty = new Toilet({lat: 47.615473, lng: -122.3512317},'Sketch Porter Potty', 1, 1, 'You Wish!', 'LOL', 'Free');
 
 // //creating toilet objects
 // var codeFellows = new Toilet({lat: 47.6164918, lng: -122.3511866}, 'Code Fellows', 4, 'images/code_fellows.png');
@@ -22,13 +23,13 @@ var armory = new Toilet()
 // var greenLeaf = new Toilet({lat: 47.6165258, lng: -122.349092}, 'Green Leaf Vietnamese Restaurant', 4);
 //
 //array to hold all of our toilets
-var toilets = [sportsBar];
+var toilets = [sportsBar, armory, porterPotty];
 
 //initializing google map
 function initMap() {
   var coords = {lat: 47.6164918, lng: -122.3511866};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
+    zoom: 15,
     center: coords
   });
 
