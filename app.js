@@ -57,3 +57,9 @@ function initMap() {
     addMarker(toilets[i]);
   }
 };
+
+//starting work on quiz
+
+function questionOne(){
+
+}
