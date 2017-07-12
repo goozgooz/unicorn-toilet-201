@@ -235,7 +235,7 @@ body {
 .card .back {
   transform: rotateY(180deg);
 }
-<<<<<<< HEAD
+
 .logo2 {
   /*width: 500px;
   height: auto;*/
@@ -243,9 +243,9 @@ body {
   margin-bottom: 5px;
   margin-left: 365px;
 }
-=======
+
 /*this is the div that holds the actual text about us*/
->>>>>>> 042a305c27195e226b5064ca07f0203ee548c5cd
+
 .what-about-us {
   width: 600px;
   position: relative;
@@ -256,7 +256,7 @@ body {
   padding: 60px;
 }
 
-<<<<<<< HEAD
+
 .title {
   font-family: fantasy;
   text-align: center;
@@ -309,11 +309,7 @@ body {
     border-top-color: #1b435e;
     background: #1b435e;
 }
-=======
 
-
-
->>>>>>> 042a305c27195e226b5064ca07f0203ee548c5cd
 
 
 /* Colors
