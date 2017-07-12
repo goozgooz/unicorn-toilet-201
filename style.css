@@ -80,83 +80,7 @@ body {
   font-size: 9px;
 }
 
-
-
-#map {
-  margin: auto;
-  margin-top: 100px;
-  width: 940px;
-  height: 600px;
-}
-
-.about-us{
-  margin-top: 100px;
-  width: 960px;
-  height: 300px;
-  display: inline-block;
-  background-color: #A4FFD5;
-}
-
-.our-pictures{
-  overflow: hidden;
-  width: 220px;
-  height: 300px;
-}
-
-.L-card-container {
-  height: 100%;
-  perspective: 600;
-  position: relative;
-  width: 220px;
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.R-card-container {
-  height: 100%;
-  perspective: 600;
-  position: relative;
-  width: 220px;
-  display: inline;
-  float: right;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.card {
-  height: 100%;
-  width: 100%;
-  float: left;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-}
-
-.card:hover {
-  transform: rotateY(180deg);
-}
-.card .side {
-  backface-visibility: hidden;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-.card .back {
-  transform: rotateY(180deg);
-}
-
-.what-about-us {
-  height: 100%;
-  width: 700px;
-}
-
-
-.title {
-  font-family: fantasy;
-  text-align: center;
-}
-
+/*Home Page */
 #large {
   font-size: 90px;
   margin-top: 200px;
@@ -177,7 +101,6 @@ body {
   text-align: center;
   margin-top: 30px;
 }
-
 
 .button {
   border-top: 1px solid #96d1f8;
@@ -201,15 +124,119 @@ body {
     text-decoration: none;
     vertical-align: middle;
   }
+
  .button:hover {
     border-top-color: #CBB7FF;
     background: #28597a;
     color: #ccc;
   }
+
  .button:active {
     border-top-color: #1b435e;
     background: #1b435e;
 }
+
+.title {
+  font-family: fantasy;
+  text-align: center;
+}
+
+/*Toilets page with all of our locations*/
+#map {
+  margin: auto;
+  margin-top: 100px;
+  width: 940px;
+  height: 600px;
+}
+
+/* About us page divs */
+.about-us{
+  margin-top: 100px;
+  width: 960px;
+  height: 300px;
+  display: inline-block;
+}
+
+#D {
+  background-color: #A874D4;
+}
+
+#A {
+  background-color: #A4FFD5;
+}
+
+#R{
+  background-color: #ED7DC0;
+}
+
+#N{
+  background-color: #FF788E;
+}
+
+
+.our-pictures{
+  overflow: hidden;
+  width: 220px;
+  height: 300px;
+}
+/*Named each div that contains pictures differently to make it easier to style since we wanted out picture layout to alternate sides as we went down the page*/
+.L-card-container {
+  height: 100%;
+  perspective: 600;
+  position: relative;
+  width: 220px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.R-card-container {
+  height: 100%;
+  perspective: 600;
+  position: relative;
+  width: 220px;
+  display: inline;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*this div holds the actual pictures that will flip and this css tells this div what to do when and what to do with each side of itself*/
+.card {
+  height: 100%;
+  width: 100%;
+  float: left;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+/*this is the div that holds the actual text about us*/
+.what-about-us {
+  width: 600px;
+  position: relative;
+  text-align: center;
+  border: solid black;
+  display: inline-block;
+  border: 50px;
+  padding: 60px;
+}
+
+
+
+
 
 /* Colors
 Purple: #A874D4
