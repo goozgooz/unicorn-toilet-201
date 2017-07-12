@@ -13,9 +13,9 @@ function Toilet(coords, name, rating, tpQuality, drying, soap, parking, icon){
   this.icon = icon;       //default to ''. will change based on survey results
 };
 
-var sportsBar = new Toilet({lat: 47.6199856, lng: -122.3482257}, 'Sport Restaurant & Bar', 3, 2, 'Both', 'Gel', 'Pay');
-var armory = new Toilet({lat: 47.6215512, lng: -122.3531273}, 'Armory @ Seattle Center', 4, 2, 'Paper Towel', 'Gel', 'Pay');
-var porterPotty = new Toilet({lat: 47.615473, lng: -122.3512317},'Sketch Porter Potty', 1, 1, 'You Wish!', 'LOL', 'Free');
+var sportsBar = new Toilet({lat: 47.6196, lng: -122.3487}, 'Sport Restaurant & Bar', 3, 2, 'Both', 'Gel', 'Pay');
+var armory = new Toilet({lat: 47.621551, lng: -122.350939}, 'Armory @ Seattle Center', 4, 2, 'Paper Towel', 'Gel', 'Pay');
+var porterPotty = new Toilet({lat: 47.620699, lng: -122.353726},'Sketch Porter Potty', 1, 1, 'You Wish!', 'LOL', 'Free');
 
 // //creating toilet objects
 // var codeFellows = new Toilet({lat: 47.6164918, lng: -122.3511866}, 'Code Fellows', 4, 'images/code_fellows.png');

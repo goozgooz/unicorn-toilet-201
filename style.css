@@ -211,6 +211,38 @@ body {
     background: #1b435e;
 }
 
+/* toilets.html styling*/
+
+#surveyArea {
+  text-align: center;
+  margin-top: 200px;
+}
+
+#prompt {
+  font-size: 42px;
+  color: #A874D4;
+  font-family: fantasy;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.option {
+  margin: 50px;
+  width: 300px;
+  height: 300px;
+}
+
+h5 {
+  color: #A874D4;
+  font-family: 'Delius Unicase', cursive;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+h6 {
+  margin:bottom: 2px;
+}
+
 /* Colors
 Purple: #A874D4
 Teal: #86FFFF
