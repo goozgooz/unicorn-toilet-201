@@ -1,27 +1,35 @@
 'use strict';
 
 //object constructor
-function Toilet(coords, name, rating, icon){
-  this.coords = coords;
+function Toilet(coords, name, rating, tpQuality, drying, soap, parking, icon){
+  this.coords = coords;   // {lat:    , lng:    }
   this.name = name;
-  this.rating = rating;
-  this.icon = icon;
-  this.info = '<h5>' + this.name + '</h5> <h6>Overall Rating: ' + this.rating + '</h6>';
+  this.rating = rating;   //Overall Rating | Integer 1-5
+  this.tpQuality = tpQuality; //TP Quality Rating | Integer 1-5
+  this.drying = drying;  //'Paper Towel' or 'Air Dryer' or 'Both'
+  this.soap = soap;   // 'Gel' or 'Foam' Soap
+  this.parking = parking; // 'Free' or 'Pay';
+  this.info = '<h5>' + this.name + '</h5> <h6>Overall Rating: ' + this.rating + '</h6> <h6>TP Rating: ' + this.tpQuality + '</h6><h6>Soap: ' + this.soap + '</h6>' + '<h6>Drying Method: ' + this.drying + '</h6>' + '<h6>Parking: ' + this.parking + '</h6>';
+  this.icon = icon;       //default to ''. will change based on survey results
 };
 
-//creating toilet objects
-var codeFellows = new Toilet({lat: 47.6164918, lng: -122.3511866}, 'Code Fellows', 4, 'images/code_fellows.png');
-var fivePoint = new Toilet({lat: 47.6181, lng: -122.3474}, 'The 5 Point Cafe', 5);
-var greenLeaf = new Toilet({lat: 47.6165258, lng: -122.349092}, 'Green Leaf Vietnamese Restaurant', 4);
+var sportsBar = new Toilet({lat: 47.6196, lng: -122.3487}, 'Sport Restaurant & Bar', 3, 2, 'Both', 'Gel', 'Pay');
+var armory = new Toilet({lat: 47.621551, lng: -122.350939}, 'Armory @ Seattle Center', 4, 2, 'Paper Towel', 'Gel', 'Pay');
+var porterPotty = new Toilet({lat: 47.620699, lng: -122.353726},'Sketch Porter Potty', 1, 1, 'You Wish!', 'LOL', 'Free');
 
+// //creating toilet objects
+// var codeFellows = new Toilet({lat: 47.6164918, lng: -122.3511866}, 'Code Fellows', 4, 'images/code_fellows.png');
+// var fivePoint = new Toilet({lat: 47.6181, lng: -122.3474}, 'The 5 Point Cafe', 5);
+// var greenLeaf = new Toilet({lat: 47.6165258, lng: -122.349092}, 'Green Leaf Vietnamese Restaurant', 4);
+//
 //array to hold all of our toilets
-var toilets = [codeFellows, fivePoint, greenLeaf];
+var toilets = [sportsBar, armory, porterPotty];
 
 //initializing google map
 function initMap() {
   var coords = {lat: 47.6164918, lng: -122.3511866};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
+    zoom: 15,
     center: coords
   });
 
