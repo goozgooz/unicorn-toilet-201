@@ -240,8 +240,11 @@ body {
   /*width: 500px;
   height: auto;*/
   opacity: 0.5;
+  margin-bottom: 50px;
   margin-bottom: 5px;
   margin-left: 365px;
+  border: 3px solid #FF988E ;
+  box-shadow: 10px 10px 5px -2px rgba(181,174,181,0.65);
 }
 
 /*this is the div that holds the actual text about us*/
@@ -299,6 +302,7 @@ body {
     font-family: fantasy, serif;
     text-decoration: none;
     vertical-align: middle;
+    margin-top: 25px;
   }
  .button:hover {
     border-top-color: #CBB7FF;
