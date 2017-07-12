@@ -166,11 +166,11 @@ body {
 }
 
 #R{
-  background-color: #ED7DC0;
+  background-color: #FF788E;
 }
 
 #N{
-  background-color: #FF788E;
+  background-color: #ED7DC0;
 }
 
 
@@ -228,7 +228,6 @@ body {
   width: 600px;
   position: relative;
   text-align: center;
-  border: solid black;
   display: inline-block;
   border: 50px;
   padding: 60px;
