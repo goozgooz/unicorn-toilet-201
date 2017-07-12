@@ -1,3 +1,15 @@
+
+/*body {
+  background-image: url("images/UNICORN-LOGO.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center,bottom;
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: rgba(0.5);
+}*/
+
+
 body {
   width: 960px;
   height: auto;
@@ -223,7 +235,20 @@ body {
 .card .back {
   transform: rotateY(180deg);
 }
+
+.logo2 {
+  /*width: 500px;
+  height: auto;*/
+  opacity: 0.5;
+  margin-bottom: 50px;
+  margin-bottom: 5px;
+  margin-left: 365px;
+  border: 3px solid #FF988E ;
+  box-shadow: 10px 10px 5px -2px rgba(181,174,181,0.65);
+}
+
 /*this is the div that holds the actual text about us*/
+
 .what-about-us {
   width: 600px;
   position: relative;
@@ -234,8 +259,93 @@ body {
 }
 
 
+.title {
+  font-family: fantasy;
+  text-align: center;
+}
+#large {
+  font-size: 90px;
+  margin-top: 15%;
+}
+#medium {
+  font-size: 60px;
+  margin-top: inherit;
+}
+#button {
+  text-align: center;
+  margin-top: 30px;
+}
+#footer {
+  margin-top: 700px;
+  font-family: times;
+  border: 2px solid black;
+}
+.button {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9c3e8c), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #9c3e8c, #65a9d7);
+    background: -moz-linear-gradient(top, #9c3e8c, #65a9d7);
+    background: -ms-linear-gradient(top, #9c3e8c, #65a9d7);
+    background: -o-linear-gradient(top, #9c3e8c, #65a9d7);
+    padding: 15px 29px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 37px;
+    font-family: fantasy, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-top: 25px;
+  }
+ .button:hover {
+    border-top-color: #CBB7FF;
+    background: #28597a;
+    color: #ccc;
+  }
+ .button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
 
 
+
+/* toilets.html styling*/
+
+#surveyArea {
+  text-align: center;
+  margin-top: 200px;
+}
+
+#prompt {
+  font-size: 42px;
+  color: #A874D4;
+  font-family: fantasy;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.option {
+  margin: 50px;
+  width: 300px;
+  height: 300px;
+}
+
+h5 {
+  color: #A874D4;
+  font-family: 'Delius Unicase', cursive;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+h6 {
+  margin:bottom: 2px;
+}
 
 /* Colors
 Purple: #A874D4
