@@ -60,3 +60,25 @@ function Toilet(rating,soap,dry,style,parking,toiletPaper){
 
 var subway = new Toilet(5, "flom", "paper","manual","street",3);
 console.log(subway);
+//adding questions
+var questionOne = prompt("What rating should your toilet get? 1 though 5"){
+  console.log(questionOne);
+}
+var questionTwo = prompt("What type of soap would you want?"){
+  console.log(questionTwo);
+}
+var questionThree = prompt("How would you like to dry your hands?"){
+  console.log(questionThree);
+}
+var questionFour = prompt("Do you want electric or manual flushing?"){
+  console.log(questionFour);
+}
+var questionFive = prompt("What level of toilet paper do you perfer? 1 out 5"){
+  console.log(questionFive);
+}
+var questionSix = prompt("You don't care you have to go now?!?!?"){
+  console.log(questionSeven);
+}
+var questionSeven = prompt("Are you worried about splash back?"){
+  console.log(questionSeven);
+}
