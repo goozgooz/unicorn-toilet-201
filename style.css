@@ -319,6 +319,12 @@ body {
 
 /* toilets.html styling*/
 
+#see-results  {
+  display: none;
+}
+
+
+
 #surveyArea {
   text-align: center;
   margin-top: 200px;

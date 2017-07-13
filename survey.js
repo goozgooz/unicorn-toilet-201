@@ -16,14 +16,15 @@ function Toilet(coords, name, rating, tpQuality, drying, soap, parking, icon){
 var sportsBar = new Toilet({lat: 47.6196, lng: -122.3487}, 'Sport Restaurant & Bar', 3, 2, 'Both', 'Gel', 'Pay');
 var armory = new Toilet({lat: 47.621551, lng: -122.350939}, 'Armory @ Seattle Center', 4, 2, 'Paper Towel', 'Gel', 'Pay');
 var porterPotty = new Toilet({lat: 47.620699, lng: -122.353726},'Sketch Porter Potty', 1, 1, 'You Wish!', 'LOL', 'Free');
+var plazaGaribaldi = new Toilet({lat: 47.6194, lng: -122.3556}, 'Plaza Garibaldi', 3, 2, 'Paper Towel', 'Gel', 'Pay');
+var dominos = new Toilet({lat: 47.6178, lng: -122.3535}, 'Dominos', 'N/A', 'N/A', 'N/A', 'N/A', 'N/A');
+var codeFellows = new Toilet({lat: 47.6182, lng: -122.3519}, 'Code Fellows', 4, 3, 'Paper Towel', 'Foam', 'Pay', 'images/code_fellows.png');
+var subway = new Toilet({lat: 47.618535, lng: -122.355325}, 'Subway', 3, 2, 'Paper Towel', 'Foam', 'Pay');
+var desertTan = new Toilet({lat:47.6175708,lng:-122.3533824},'Desert Tan', 3, 4,'Both','Foam','Pay');
+var cherryCafe = new Toilet({lat:47.6181642,lng:-122.3493946},'Cherry Street Coffee House', 3, 2, 'Paper Towel','Liquid','Pay');
 
-// //creating toilet objects
-// var codeFellows = new Toilet({lat: 47.6164918, lng: -122.3511866}, 'Code Fellows', 4, 'images/code_fellows.png');
-// var fivePoint = new Toilet({lat: 47.6181, lng: -122.3474}, 'The 5 Point Cafe', 5);
-// var greenLeaf = new Toilet({lat: 47.6165258, lng: -122.349092}, 'Green Leaf Vietnamese Restaurant', 4);
-//
 //array to hold all of our toilets
-var toilets = [sportsBar, armory, porterPotty];
+var toilets = [sportsBar, armory, porterPotty, plazaGaribaldi, dominos, codeFellows, subway, desertTan, cherryCafe];
 
 //starting work on quiz
 //declaring all variables needed for DOM manipulation during the quiz
@@ -40,6 +41,14 @@ function clearDisplay(){
   leftOption.setAttribute('src', '');
   rightOption.setAttribute('src', '');
 };
+
+function displayUnicorn(){
+  var unicorn = document.getElementById('see-results');
+  surveyArea.removeChild(leftOption);
+  surveyArea.removeChild(rightOption);
+  surveyArea.removeChild(prompt);
+  unicorn.style.display = 'inline-block';
+}
 
 function questionOne(){
   prompt.innerHTML = 'Wait... How bad do you have to go to the bathroom??';
@@ -83,11 +92,6 @@ function startQuiz(event){
     questionTwo();
     // var answer = event.target.id;   //getting id of whichever option was picked in question1
   } else {
-    surveyArea.removeChild(leftOption);
-    surveyArea.removeChild(rightOption);
-    surveyArea.removeChild(prompt);
-    console.log('survey over. time for results');
-    var map = document.getElementById('map');
-    map.removeAttribute('display');
+    displayUnicorn();
   }
 }
