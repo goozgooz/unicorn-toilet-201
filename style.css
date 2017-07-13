@@ -329,7 +329,8 @@ body {
   font-family: fantasy;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 50px;
+  line-height: 60px;
+  margin: 25px;
 }
 
 .option {
