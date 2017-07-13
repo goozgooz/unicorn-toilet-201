@@ -18,10 +18,10 @@ var sportsBar = new Toilet({lat: 47.6196, lng: -122.3487}, 'Sport Restaurant & B
 var armory = new Toilet({lat: 47.621551, lng: -122.350939}, 'Armory @ Seattle Center', 4, 2, 'Paper Towel', 'Gel', 'Pay');
 var porterPotty = new Toilet({lat: 47.620699, lng: -122.353726},'Sketch Porter Potty', 1, 1, 'You Wish!', 'LOL', 'Free');
 var costco = new Toilet({lat: 47.5654, lng: -122.3303}, 'Costco Wholesale', 4, 2, 'Both', 'Gel', 'Free');
-var italian = new Toilet({lat:47.6134, lng:122.3403}), 'Assaggio', 5, 3, 'Paper Towel', 'Gel', 'Free'):
+var assagio = new Toilet({lat: 47.6134, lng: -122.3403}, 'Assaggio', 5, 3, 'Paper Towel', 'Gel', 'Free');
 
 //array to hold all of our toilets
-var toilets = [sportsBar, armory, porterPotty];
+var toilets = [sportsBar, armory, porterPotty, costco, assagio];
 
 //initializing google map
 function initMap() {
