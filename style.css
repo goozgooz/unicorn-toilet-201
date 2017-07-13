@@ -206,6 +206,7 @@ h5 {
 
 h6 {
   margin:bottom: 2px;
+  /*display: none;*/
 }
 
 /* About us page divs */
@@ -294,12 +295,11 @@ h6 {
   padding: 60px;
   margin-top: 25px;
   font-family: cursive;
-}
 
 /* Colors
 Purple: #A874D4
 Teal: #86FFFF
-Orange: #FF788E
+Orange: #FF988E
 Pink: #ED7DC0
 Mint: A4FFD5;
 */
