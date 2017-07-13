@@ -56,15 +56,25 @@ function Toilet(rating,soap,dry,style,parking,toiletPaper){
   this.style = style;
   this.parking = parking;
   this.toiletPaper = toiletPaper;
-}
 
-var subway = new Toilet(5, "flom", "paper","manual","street",3);
-console.log(subway);
-var dominos = new Toliets(1);//this does not have a public bathroom
+function Toilet(coords, name, rating, tpQuality, drying, soap, parking, icon){
+  this.coords = coords;   // {lat:    , lng:    }
+  this.name = name;  //Restaurant name
+  this.rating = rating;   //Overall Rating | Integer 1-5
+  this.tpQuality = tpQuality; //TP Quality Rating | Integer 1-5   t
+  his.drying = drying;  //‘Paper Towel’ or ‘Air Dryer’ or ‘Both’
+  this.soap = soap;   // ‘Gel’ or ‘Foam’ Soap
+  this.parking = parking; // ‘Free’ or ‘Pay’;   t
+  his.info = ‘<h5>’ + this.name + ‘</h5> <h6>Overall Rating: ’ + this.rating + ‘</h6> <h6>TP Rating: ’ + this.tpQuality + ‘</h6><h6>Soap: ’ + this.soap + ‘</h6>’ + ‘<h6>Drying Method: ’ + this.drying + ‘</h6>’ + ‘<h6>Parking: ’ + this.parking + ‘</h6>‘;
+  this.icon = icon;       //default to ‘’. will change based on survey results };  //creating toilet objects v
+  var sportsBar = new Toilet({lat: 47.6196, lng: -122.3487}, ‘Sport Restaurant & Bar’, 3, 2, ‘Both’, ‘Gel’, ‘Pay’); var armory = new Toilet({lat: 47.621551, lng: -122.350939}, ‘Armory @ Seattle Center’, 4, 2, ‘Paper Towel’, ‘Gel’, ‘Pay’); var porterPotty = new Toilet({lat: 47.620699, lng: -122.353726},‘Sketch Porter Potty’, 1, 1, ‘You Wish!‘, ‘LOL’, ‘Free’);
+
+var subway= new Toilet({lat:47.618535,lng:-122.355325},'Subway',5,3,'paper','Gel','Street');
+var dominos = new Toliets({lat:47.617763,lng:-122.353710},'Dominos',1,'none','none','Pay');//this does not have a public bathroom
 console.log(dominos);
-var desserttan = new Toilets(4,"liquad","paper","manual","street",4);
+var desserttan = new Toilets({lat:47.6175708,lng:-122.3533824}),'Dessert Tan',4,4,'Both','Liquad','Both';
 console.log(desserttan);
-var cherrycafe = new Toilets(4,"liquad","airdry","electric","street",4);
+var cherrycafe = new Toilets({lat:47.6026139,lng:-122.3338082},'Cherry Cafe',3,4,'Paper','Liquad','Street');
 console.log(cherrycafe);
 
 //adding questions
