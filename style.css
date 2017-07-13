@@ -159,6 +159,7 @@ body {
   margin-top: 100px;
   width: 940px;
   height: 600px;
+  /*display: none;*/
 }
 
 /* About us page divs */
@@ -326,12 +327,25 @@ body {
   font-family: fantasy;
   font-weight: bold;
   letter-spacing: 2px;
+  line-height: 60px;
+  margin: 25px;
 }
 
 .option {
   margin: 50px;
   width: 300px;
   height: 300px;
+  /*box-shadow: 10px 10px 5px -2px rgba(181,174,181,0.65);*/
+}
+
+#left-option{
+  border: 3px solid #FF988E;;
+  box-shadow: 10px 10px 5px -2px rgba(181,174,181,0.65);
+}
+
+#right-option {
+  border: 3px solid #FF988E;
+  box-shadow: -10px 10px 5px -2px rgba(181,174,181,0.65);
 }
 
 h5 {
@@ -348,7 +362,7 @@ h6 {
 /* Colors
 Purple: #A874D4
 Teal: #86FFFF
-Orange: #FF788E
+Orange: #FF988E
 Pink: #ED7DC0
 Mint: A4FFD5;
 */

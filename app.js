@@ -3,7 +3,7 @@
 //object constructor
 function Toilet(coords, name, rating, tpQuality, drying, soap, parking, icon){
   this.coords = coords;   // {lat:    , lng:    }
-  this.name = name;
+  this.name = name;  //Restaurant name
   this.rating = rating;   //Overall Rating | Integer 1-5
   this.tpQuality = tpQuality; //TP Quality Rating | Integer 1-5
   this.drying = drying;  //'Paper Towel' or 'Air Dryer' or 'Both'
@@ -13,15 +13,11 @@ function Toilet(coords, name, rating, tpQuality, drying, soap, parking, icon){
   this.icon = icon;       //default to ''. will change based on survey results
 };
 
+//creating toilet objects
 var sportsBar = new Toilet({lat: 47.6196, lng: -122.3487}, 'Sport Restaurant & Bar', 3, 2, 'Both', 'Gel', 'Pay');
 var armory = new Toilet({lat: 47.621551, lng: -122.350939}, 'Armory @ Seattle Center', 4, 2, 'Paper Towel', 'Gel', 'Pay');
 var porterPotty = new Toilet({lat: 47.620699, lng: -122.353726},'Sketch Porter Potty', 1, 1, 'You Wish!', 'LOL', 'Free');
 
-// //creating toilet objects
-// var codeFellows = new Toilet({lat: 47.6164918, lng: -122.3511866}, 'Code Fellows', 4, 'images/code_fellows.png');
-// var fivePoint = new Toilet({lat: 47.6181, lng: -122.3474}, 'The 5 Point Cafe', 5);
-// var greenLeaf = new Toilet({lat: 47.6165258, lng: -122.349092}, 'Green Leaf Vietnamese Restaurant', 4);
-//
 //array to hold all of our toilets
 var toilets = [sportsBar, armory, porterPotty];
 
