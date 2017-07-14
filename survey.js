@@ -72,16 +72,16 @@ function questionTwo(){
 }
 
 function questionThree(){
-  prompt.innerHtml = 'Which do you perfer?';
-  leftOption.setAttribute('src','images/'); //need to add images
-  rightOption.setAttribute('src','images/');
+  prompt.innerHtml = 'Which do you perfer to take with you to the bathroom?';
+  leftOption.setAttribute('src','images/spider.jpg'); //need to add images
+  rightOption.setAttribute('src','images/Ricky.JPG');
   var answer = event.target.id;
 }
 
 function questionFour(){
-  prompt.innerHtml = ('High flowing or low flowing');
-  // left.Option.setAttribute('src','images/');
-  // right.Option.setAttribute('src','images/');
+  prompt.innerHtml = ('Which would you like to press your butt on?');
+  left.Option.setAttribute('src','images/new_toilet.jpg');
+  right.Option.setAttribute('src','images/old_toilet.jpg');
   var answer = event.target.id;
 }
 function questionFive(){
