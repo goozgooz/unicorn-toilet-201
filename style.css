@@ -226,15 +226,17 @@ h6 {
 }
 
 #A {
-  background-color: #A4FFD5;
+  background-color: #ED7DC0;
+  color: white;
 }
 
 #R{
-  background-color: #FF788E;
+  background-color: #A874D4;
 }
 
 #N{
   background-color: #ED7DC0;
+  color: white;
 }
 
 .our-pictures{
@@ -293,10 +295,18 @@ h6 {
 .what-about-us {
   width: 600px;
   position: relative;
-  text-align: center;
+  text-align: block;
   display: inline-block;
   border: 50px;
-  padding: 60px;
+  padding: 30px;
+  font-family: open-sans;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+#mama-d{
+  background-color: #A874D4;
+  color: white;
 }
 
 
