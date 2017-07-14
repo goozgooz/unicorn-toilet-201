@@ -17,6 +17,11 @@ body {
   /*border: 2px solid black;*/
 }
 
+#button1{
+  position: relative;
+  top: 60px;
+  margin-left: 365px;
+}
 /*Header Stuff*/
 
 .navbar {
