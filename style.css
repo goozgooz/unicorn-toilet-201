@@ -323,6 +323,9 @@ body {
   display: none;
 }
 
+.poop{
+  margin: auto;
+}
 
 
 #surveyArea {
@@ -348,7 +351,7 @@ body {
 }
 
 #left-option{
-  border: 3px solid #FF988E;;
+  border: 3px solid #FF988E;
   box-shadow: 10px 10px 5px -2px rgba(181,174,181,0.65);
 }
 

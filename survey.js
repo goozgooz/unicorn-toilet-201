@@ -36,6 +36,11 @@ var questionHolder = document.getElementById('surveyArea');
 var leftOption = document.getElementById('left-option');
 var rightOption = document.getElementById('right-option');
 
+function createLocalStorage(){
+  var toiletData = JSON.stringify(toilets);
+  localStorage.data = toiletData;
+};
+
 //function to clear the image src after a turn is done
 function clearDisplay(){
   leftOption.setAttribute('src', '');
@@ -92,6 +97,7 @@ function startQuiz(event){
     questionTwo();
     // var answer = event.target.id;   //getting id of whichever option was picked in question1
   } else {
+    createLocalStorage();
     displayUnicorn();
   }
 }
