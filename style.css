@@ -95,6 +95,7 @@ body {
 /*Home Page */
 #large {
   margin-top: 200px;
+  margin-bottom: 50px;
   font-size: 90px;
 }
 
@@ -174,8 +175,6 @@ body {
 #map {
   width: 940px;
   height: 600px;
-<<<<<<< HEAD
-=======
   margin: auto;
   margin-top: 100px;
 }
@@ -208,7 +207,6 @@ h5 {
 
 h6 {
   margin:bottom: 2px;
->>>>>>> 8083f7fdbdbd0a0d56afc6878632ae7dd49b447c
   /*display: none;*/
 }
 
@@ -296,7 +294,6 @@ h6 {
   display: inline-block;
   border: 50px;
   padding: 60px;
-<<<<<<< HEAD
 }
 
 
@@ -354,7 +351,19 @@ h6 {
     background: #1b435e;
 }
 
+
+
+
 /* toilets.html styling*/
+
+#see-results  {
+  display: none;
+}
+
+.poop{
+  margin: auto;
+}
+
 
 #surveyArea {
   text-align: center;
@@ -379,7 +388,7 @@ h6 {
 }
 
 #left-option{
-  border: 3px solid #FF988E;;
+  border: 3px solid #FF988E;
   box-shadow: 10px 10px 5px -2px rgba(181,174,181,0.65);
 }
 
@@ -398,10 +407,7 @@ h5 {
 h6 {
   margin:bottom: 2px;
 }
-=======
-  margin-top: 25px;
-  font-family: cursive;
->>>>>>> 8083f7fdbdbd0a0d56afc6878632ae7dd49b447c
+
 
 /* Colors
 Purple: #A874D4
