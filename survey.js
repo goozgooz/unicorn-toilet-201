@@ -22,9 +22,11 @@ var codeFellows = new Toilet({lat: 47.6182, lng: -122.3519}, 'Code Fellows', 4, 
 var subway = new Toilet({lat: 47.618535, lng: -122.355325}, 'Subway', 3, 2, 'Paper Towel', 'Foam', 'Pay');
 var desertTan = new Toilet({lat:47.6175708,lng:-122.3533824},'Desert Tan', 3, 4,'Both','Foam','Pay');
 var cherryCafe = new Toilet({lat:47.6181642,lng:-122.3493946},'Cherry Street Coffee House', 3, 2, 'Paper Towel','Liquid','Pay');
+var belltownPizza = new Toilets({lat:47.614602,lng:-122.348388},'Belltown Pizza', 4, 4,"Air Dryer","liquad","Paid");
+var zeeksPizza = new Toilets({lat:47.618319, lng;-122.348613},'Zeeks Pizza', 4, 4, "Paper","Foam","Steet");
 
 //array to hold all of our toilets
-var toilets = [sportsBar, armory, porterPotty, plazaGaribaldi, dominos, codeFellows, subway, desertTan, cherryCafe];
+var toilets = [sportsBar, armory, porterPotty, plazaGaribaldi, dominos, codeFellows, subway, desertTan, cherryCafe, belltownPizza, zeeksPizza];
 
 //starting work on quiz
 //declaring all variables needed for DOM manipulation during the quiz
@@ -69,8 +71,46 @@ function questionTwo(){
 
 }
 
+function questionThree(){
+  prompt.innerHtml = 'Which do you perfer?';
+  leftOption.setAttribute('src','images/'); //need to add images
+  rightOption.setAttribute('src','images/');
+  var answer = event.target.id;
+}
+
+function questionFour(){
+  prompt.innerHtml = ('High flowing or low flowing');
+  // left.Option.setAttribute('src','images/');
+  // right.Option.setAttribute('src','images/');
+  var answer = event.target.id;
+}
+function questionFive(){
+  prompt.innerHtml = ('Level of toilet paper would you us? ');
+  left.Option.setAttribute('src','images/');
+  right.Option.setAttribute('src','images/');
+  var answer = event.target.id;
+}
+function questionSix(){
+  prompt.innerHtml = ('');
+  left.Option.setAttribute('src','images/');
+  right.Option.setAttribute('src','images/');
+  var answer = event.target.id;
+}
+function questionSeven(){
+  prompt.innerHtml = ('');
+  left.Option.setAttribute('src','images/');
+  right.Option.setAttribute('src','images/');
+  var answer = event.target.id;
+}
+
 //running the first queturnstion before things get going
 questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
 
 surveyArea.addEventListener('click', startQuiz);
 
