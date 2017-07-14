@@ -1,4 +1,5 @@
 'use strict';
+
 var toilets = [];
 // //object constructor
 // function Toilet(coords, name, rating, tpQuality, drying, soap, parking, icon){
@@ -27,8 +28,6 @@ var toilets = [];
 // var toilets = [sportsBar, armory, porterPotty, plazaGaribaldi, dominos, codeFellows, subway, desertTan, cherryCafe];
 var toiletData = JSON.parse(localStorage.data);
 var toilets = toiletData;
-
-//place holder to find random unicorn
 
 //initializing google map
 function initMap() {
