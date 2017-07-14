@@ -103,7 +103,9 @@ function startQuiz(event){
   } if (turn < 5){
     event.preventDefault();
     questionTwo();
+    clearDisplay();
     questionThree();
+    clearDisplay();
     // var answer = event.target.id;   //getting id of whichever option was picked in question1
   } else {
     createLocalStorage();
