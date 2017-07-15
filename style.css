@@ -339,9 +339,27 @@ h6 {
 
 /* toilets.html styling*/
 
-#see-results  {
+.see-results  {
+  width: 500px;
+  position: relative;
+  left: 300px;
   display: none;
 }
+
+.see-results a {
+  margin-left: 100px;
+}
+
+#click-me {
+  font-family: 'Delius Unicase', cursive;
+  color: #A874D4;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 
 .poop{
   margin: auto;

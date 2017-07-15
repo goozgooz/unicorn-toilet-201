@@ -47,7 +47,7 @@ function clearDisplay(){
 };
 
 function displayUnicorn(){
-  var unicorn = document.getElementById('see-results');
+  var unicorn = document.getElementsByClassName('see-results')[0];
   surveyArea.removeChild(leftOption);
   surveyArea.removeChild(rightOption);
   surveyArea.removeChild(prompt);
