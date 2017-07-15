@@ -95,6 +95,13 @@ function questionFive(){
   rightOption.setAttribute('src','images/selfieB.jpg');
 }
 
+/*pair programed Ricky's question*/
+function questionSix(){
+  prompt.innerHTML = 'Did your lunch come from a restaurant or a gas station?';
+  leftOption.setAttribute('src', 'images/');
+  rightOption.setAttribute('src', 'images/');
+}
+
 //running the first queturnstion before things get going
 questionOne();
 
