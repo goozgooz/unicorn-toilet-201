@@ -76,8 +76,8 @@ function questionTwo(){
 
 function questionThree(){
   prompt.innerHtml = 'Which do you perfer to take with you to the bathroom?';
-  leftOption.setAttribute('src','images/spider.jpg');
-  rightOption.setAttribute('src','images/Ricky.JPG');
+  leftOption.setAttribute('src','images/selfie3.jpg');
+  rightOption.setAttribute('src','images/selfie4.jpg');
 }
 
 function questionFour(){
