@@ -22,9 +22,10 @@ var codeFellows = new Toilet({lat: 47.6182, lng: -122.3519}, 'Code Fellows', 4, 
 var subway = new Toilet({lat: 47.618535, lng: -122.355325}, 'Subway', 3, 2, 'Paper Towel', 'Foam', 'Pay');
 var desertTan = new Toilet({lat:47.6175708,lng:-122.3533824},'Desert Tan', 3, 4,'Both','Foam','Pay');
 var cherryCafe = new Toilet({lat:47.6181642,lng:-122.3493946},'Cherry Street Coffee House', 3, 2, 'Paper Towel','Liquid','Pay');
+var storyville = new Toilet({lat: 47.6101, lng: -122.3421}, 'Storyville Coffee', 5, 4, 'Paper Towel', 'Gel', 'Pay');
 
 //array to hold all of our toilets
-var toilets = [sportsBar, armory, porterPotty, plazaGaribaldi, dominos, codeFellows, subway, desertTan, cherryCafe];
+var toilets = [sportsBar, armory, porterPotty, plazaGaribaldi, dominos, codeFellows, subway, desertTan, cherryCafe, storyville];
 
 //starting work on quiz
 //declaring all variables needed for DOM manipulation during the quiz
@@ -111,14 +112,17 @@ function startQuiz(event){
       turn ++;
     }
   } else if (turn === 2){
+    console.log(prompt);
     console.log('turn: ' + turn);
     questionTwo();
     turn ++;
   } else if (turn === 3){
+    console.log(prompt);
     console.log('turn: ' + turn);
     questionThree();
     turn ++;
   } else if (turn === 4){
+    console.log(prompt);
     console.log('turn: ' + turn);
     questionFour();
     turn ++;
