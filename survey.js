@@ -75,15 +75,21 @@ function questionTwo(){
 }
 
 function questionThree(){
-  prompt.innerHtml = 'Which do you perfer to take with you to the bathroom?';
-  leftOption.setAttribute('src','images/selfie3.jpg');
-  rightOption.setAttribute('src','images/selfie4.jpg');
+  prompt.innerHTML = 'Which do you perfer to take with you to the bathroom?';
+  leftOption.setAttribute('src','images/spider.jpg');
+  rightOption.setAttribute('src','images/ricky-small.JPG');
 }
 
 function questionFour(){
-  prompt.innerHtml = ('Which would you like to press your butt on?');
+  prompt.innerHTML = 'Which would you like to press your butt on?';
   leftOption.setAttribute('src','images/new_toilet.jpg');
   rightOption.setAttribute('src','images/old_toilet.jpg');
+}
+
+function questionFive(){
+  prompt.innerHTML = 'Which type of selfie person are you?';
+  leftOption.setAttribute('src','images/selfieA.jpg');
+  rightOption.setAttribute('src','images/selfieB.jpg');
 }
 
 //running the first queturnstion before things get going
@@ -116,6 +122,10 @@ function startQuiz(event){
     console.log('turn: ' + turn);
     questionFour();
     turn ++;
+  } else if (turn === 5){
+    console.log('turn: ' + turn);
+    questionFive();
+    turn++;
   } else {
     randomUnicorn();
     createLocalStorage();
