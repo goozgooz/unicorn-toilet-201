@@ -56,17 +56,33 @@ function displayUnicorn(){
 }
 
 function questionOne(){
+  console.log('turn: ' + turn);
   prompt.innerHTML = 'Wait... How bad do you have to go to the bathroom??';
   leftOption.setAttribute('src', 'images/gotta-go.jpg');
   rightOption.setAttribute('src', 'images/hold-it.jpg');
 }
 
 function questionTwo(){
+  clearDisplay();
+  console.log('turn: ' + turn);
   prompt.innerHTML = 'Which do you prefer? Gel Hand Soap or Foamy Hand Soap?';
   leftOption.setAttribute('src', 'images/gel.jpg');
   rightOption.setAttribute('src', 'images/foam.jpg');
-  var answer = event.target.id;
+  turn++;
+}
 
+function questionThree(){
+  console.log('turn: ' + turn);
+  prompt.innerHtml = 'Which do you perfer to take with you to the bathroom?';
+  leftOption.setAttribute('src','images/spider.jpg'); //need to add images
+  rightOption.setAttribute('src','images/Ricky.JPG');
+}
+
+function questionFour(){
+  console.log('turn: ' + turn);
+  prompt.innerHtml = ('Which would you like to press your butt on?');
+  leftOption.setAttribute('src','images/new_toilet.jpg');
+  rightOption.setAttribute('src','images/old_toilet.jpg');
 }
 
 //running the first queturnstion before things get going
@@ -81,21 +97,19 @@ function startQuiz(event){
     event.preventDefault();
     var answer = event.target.id;   //getting id of whichever option was picked in question1
     if(answer === 'left-option'){
+      porterPotty.icon = 'images/mini-logo.png';
       unicornToilet = porterPotty;
-      console.log(unicornToilet);
       turn = 5;  //change turn to 5 so the survery is over
       //code to change unicorn logo
     } else {
       event.preventDefault();
-      console.log('keep going');
       clearDisplay();
       turn ++;
-      console.log(turn);
     }
   } if (turn < 5){
     event.preventDefault();
     questionTwo();
-    // var answer = event.target.id;   //getting id of whichever option was picked in question1
+    questionThree();
   } else {
     createLocalStorage();
     displayUnicorn();
