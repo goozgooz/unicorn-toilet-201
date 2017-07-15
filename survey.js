@@ -47,7 +47,7 @@ function clearDisplay(){
 };
 
 function displayUnicorn(){
-  var unicorn = document.getElementById('see-results');
+  var unicorn = document.getElementsByClassName('see-results')[0];
   surveyArea.removeChild(leftOption);
   surveyArea.removeChild(rightOption);
   surveyArea.removeChild(prompt);
@@ -75,13 +75,13 @@ function questionTwo(){
 }
 
 function questionThree(){
-  prompt.innerHtml = 'Which do you perfer to take with you to the bathroom?';
+  prompt.innerHTML = 'Which do you perfer to take with you to the bathroom?';
   leftOption.setAttribute('src','images/spider.jpg');
   rightOption.setAttribute('src','images/Ricky.JPG');
 }
 
 function questionFour(){
-  prompt.innerHtml = ('Which would you like to press your butt on?');
+  prompt.innerHTML = ('Which would you like to press your butt on?');
   leftOption.setAttribute('src','images/new_toilet.jpg');
   rightOption.setAttribute('src','images/old_toilet.jpg');
 }
@@ -105,14 +105,17 @@ function startQuiz(event){
       turn ++;
     }
   } else if (turn === 2){
+    console.log(prompt);
     console.log('turn: ' + turn);
     questionTwo();
     turn ++;
   } else if (turn === 3){
+    console.log(prompt);
     console.log('turn: ' + turn);
     questionThree();
     turn ++;
   } else if (turn === 4){
+    console.log(prompt);
     console.log('turn: ' + turn);
     questionFour();
     turn ++;
