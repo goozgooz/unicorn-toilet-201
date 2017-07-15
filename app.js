@@ -1,3 +1,4 @@
+
 'use strict';
 
 //array to hold all of our toilets
