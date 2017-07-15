@@ -90,7 +90,7 @@ function questionFour(){
 }
 
 function questionFive(){
-  prompt.innerHTML = 'Which type of selfie person are you?';
+  prompt.innerHTML = 'Which type of bathroom selfie person are you?';
   leftOption.setAttribute('src','images/selfieA.jpg');
   rightOption.setAttribute('src','images/selfieB.jpg');
 }
@@ -98,8 +98,8 @@ function questionFive(){
 /*pair programed Ricky's question*/
 function questionSix(){
   prompt.innerHTML = 'Did your lunch come from a restaurant or a gas station?';
-  leftOption.setAttribute('src', 'images/');
-  rightOption.setAttribute('src', 'images/');
+  leftOption.setAttribute('src', 'images/dish1.jpg');
+  rightOption.setAttribute('src', 'images/dish2.jpg');
 }
 
 //running the first queturnstion before things get going
@@ -138,6 +138,10 @@ function startQuiz(event){
   } else if (turn === 5){
     console.log('turn: ' + turn);
     questionFive();
+    turn++;
+  } else if (turn === 6){
+    console.log('turn: ' + turn);
+    questionSix();
     turn++;
   } else {
     randomUnicorn();
