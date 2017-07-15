@@ -29,7 +29,6 @@ var toilets = [sportsBar, armory, porterPotty, plazaGaribaldi, dominos, codeFell
 //starting work on quiz
 //declaring all variables needed for DOM manipulation during the quiz
 var turn = 1;
-var surveryArray = [];  //array we will use to narrow down based on asnwers
 var unicornToilet = {};
 var prompt = document.getElementById('prompt');
 var questionHolder = document.getElementById('surveyArea');
@@ -48,25 +47,43 @@ function clearDisplay(){
 };
 
 function displayUnicorn(){
-  var unicorn = document.getElementById('see-results');
+  var unicorn = document.getElementsByClassName('see-results')[0];
   surveyArea.removeChild(leftOption);
   surveyArea.removeChild(rightOption);
   surveyArea.removeChild(prompt);
   unicorn.style.display = 'inline-block';
 }
 
+function randomUnicorn() {
+  var uni = toilets[Math.floor(Math.random() * toilets.length)];
+  uni.icon = 'images/mini-logo.png';
+}
+
+// var yourUnicorn = randomUnicorn();
+
 function questionOne(){
+  console.log('turn: ' + turn);
   prompt.innerHTML = 'Wait... How bad do you have to go to the bathroom??';
   leftOption.setAttribute('src', 'images/gotta-go.jpg');
   rightOption.setAttribute('src', 'images/hold-it.jpg');
 }
 
 function questionTwo(){
-  prompt.innerHTML = 'Which do you prefer? Gel Hand Soap or Foamy Hand Soap?';
+  prompt.innerHTML = 'Which do you prefer? Gel Soap or Foamy Soap?';
   leftOption.setAttribute('src', 'images/gel.jpg');
   rightOption.setAttribute('src', 'images/foam.jpg');
-  var answer = event.target.id;
+}
 
+function questionThree(){
+  prompt.innerHtml = 'Which do you perfer to take with you to the bathroom?';
+  leftOption.setAttribute('src','images/spider.jpg');
+  rightOption.setAttribute('src','images/Ricky.JPG');
+}
+
+function questionFour(){
+  prompt.innerHtml = ('Which would you like to press your butt on?');
+  leftOption.setAttribute('src','images/new_toilet.jpg');
+  rightOption.setAttribute('src','images/old_toilet.jpg');
 }
 
 //running the first queturnstion before things get going
@@ -75,28 +92,32 @@ questionOne();
 surveyArea.addEventListener('click', startQuiz);
 
 function startQuiz(event){
-  surveryArray = toilets; //making our surveryArray equal to our array of all the toilets
   //logic for our first turn
   if(turn === 1){
-    event.preventDefault();
     var answer = event.target.id;   //getting id of whichever option was picked in question1
     if(answer === 'left-option'){
+      porterPotty.icon = 'images/mini-logo.png';
       unicornToilet = porterPotty;
-      console.log(unicornToilet);
-      turn = 5;  //change turn to 5 so the survery is over
+      createLocalStorage();
+      displayUnicorn();
       //code to change unicorn logo
     } else {
-      event.preventDefault();
-      console.log('keep going');
-      clearDisplay();
       turn ++;
-      console.log(turn);
     }
-  } if (turn < 5){
-    event.preventDefault();
+  } else if (turn === 2){
+    console.log('turn: ' + turn);
     questionTwo();
-    // var answer = event.target.id;   //getting id of whichever option was picked in question1
+    turn ++;
+  } else if (turn === 3){
+    console.log('turn: ' + turn);
+    questionThree();
+    turn ++;
+  } else if (turn === 4){
+    console.log('turn: ' + turn);
+    questionFour();
+    turn ++;
   } else {
+    randomUnicorn();
     createLocalStorage();
     displayUnicorn();
   }
